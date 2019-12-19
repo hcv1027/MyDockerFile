@@ -1,0 +1,3 @@
+docker run -it --env="DISPLAY" --env="QT_X11_NO_MITSHM=1" --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" -env="XAUTHORITY=$XAUTH" --volume="$XAUTH:$XAUTH" -v `pwd`:/src --runtime=nvidia -p 8889:8888 -p 6006:6006 behavioral-cloning
+
+

@@ -1,0 +1,19 @@
+alias python=/usr/bin/python3
+pip install jupyter numpy scipy h5py eventlet flask-socketio seaborn pandas ffmpeg imageio moviepy opencv-python requests moviepy
+pip install eventlet Flask-SocketIO
+
+apt install -y netbase
+apt-get install python3-tk
+apt-get update && apt-get install libxcursor-dev libxrandr-dev vim
+
+git clone https://github.com/uWebSockets/uWebSockets
+apt-get install git libuv1-dev libssl-dev gcc g++ cmake make
+cd uWebSockets/
+git checkout e94b6e1
+mkdir build && cd build
+cmake ..
+make
+make install
+cd ../..
+ln -s /usr/lib64/libuWS.so /usr/lib/libuWS.so
+rm -r uWebSockets
